@@ -1,0 +1,55 @@
+.widget {
+  @include font-sizerem(0.875);
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      a {
+        display: block;
+        padding: .5rem 1rem;
+      }
+
+      a:focus,
+      a:hover {
+        background-color: #eee;
+        text-decoration: none;
+      }
+    }
+
+    li.recentcomments {
+      display: block;
+      padding: 5px 15px;
+
+      a:focus,
+      a:hover {
+        background-color: initial;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  // gallery
+  .gallery-item {
+    margin: 0.5em;
+  }
+
+  // calendar table
+  #wp-calendar {
+    tbody > tr > td {
+      padding: .5rem;
+    }
+  }
+}
+
+.half-rule {
+  margin: 2.5rem 0;
+  width: 6rem;
+}
+
